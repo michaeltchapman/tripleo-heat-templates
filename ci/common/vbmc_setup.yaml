@@ -13,7 +13,7 @@ resources:
       config: |
         #!/bin/bash
         cd /etc/yum.repos.d
-        echo 'nameserver 8.8.8.8' > /etc/resolv.conf
+        echo 'nameserver 10.11.5.19' > /etc/resolv.conf
         curl https://git.openstack.org/cgit/openstack/tripleo-repos/plain/tripleo_repos/main.py | python - current-tripleo
         yum install -y python2-virtualbmc epel-release libvirt-client libvirt-daemon libvirt qemu-kvm-ev
         yum install -y qemu-system-x86  # <-- needs epel
